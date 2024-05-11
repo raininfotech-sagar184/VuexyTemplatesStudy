@@ -113,7 +113,7 @@ const Login = ({ mode }) => {
     borderedLightIllustration,
     borderedDarkIllustration
   )
-
+  console.log("characterIllustration====================>",characterIllustration)
   const handleClickShowPassword = () => setIsPasswordShown(show => !show)
 
   const onSubmit = async data => {

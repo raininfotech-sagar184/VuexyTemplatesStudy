@@ -1,8 +1,9 @@
 // Component Imports
-import Login from '@views/Login'
+
 
 // Server Action Imports
 import { getServerMode } from '@core/utils/serverHelpers'
+import Login from '../../../../views/Login'
 
 export const metadata = {
   title: 'Login',
