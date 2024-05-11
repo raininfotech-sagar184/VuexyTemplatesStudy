@@ -25,8 +25,8 @@ import { getMode, getSystemMode } from '@core/utils/serverHelpers'
 
 const Layout = async ({ children, params }) => {
   // Vars
-  const direction = i18n.langDirection[params.lang]
-  const dictionary = await getDictionary(params.lang)
+  const direction = i18n.langDirection["en"]
+  const dictionary = await getDictionary("en")
   const mode = getMode()
   const systemMode = getSystemMode()
 

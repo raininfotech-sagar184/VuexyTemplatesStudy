@@ -38,7 +38,7 @@ import { useImageVariant } from '@core/hooks/useImageVariant'
 import { useSettings } from '@core/hooks/useSettings'
 
 // Util Imports
-import { getLocalizedUrl } from '@/utils/i18n'
+// import { getLocalizedUrl } from '@/utils/i18n'
 
 // Styled Custom Components
 const LoginIllustration = styled('img')(({ theme }) => ({
@@ -127,7 +127,7 @@ const Login = ({ mode }) => {
       // Vars
       const redirectURL = searchParams.get('redirectTo') ?? '/'
 
-      router.push(getLocalizedUrl(redirectURL, locale))
+      router.push("dashboards/crm")
     } else {
       if (res?.error) {
         const error = JSON.parse(res.error)
@@ -224,7 +224,7 @@ const Login = ({ mode }) => {
                 className='text-end'
                 color='primary'
                 component={Link}
-                href={getLocalizedUrl('/forgot-password', locale)}
+                href={ '/forgot-password' }
               >
                 Forgot password?
               </Typography>
@@ -234,7 +234,7 @@ const Login = ({ mode }) => {
             </Button>
             <div className='flex justify-center items-center flex-wrap gap-2'>
               <Typography>New on our platform?</Typography>
-              <Typography component={Link} href={getLocalizedUrl('/register', locale)} color='primary'>
+              <Typography component={Link} href={ '/register'} color='primary'>
                 Create an account
               </Typography>
             </div>
