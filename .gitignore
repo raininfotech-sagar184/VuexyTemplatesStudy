@@ -1,13 +1,41 @@
-# Dependency directories
-node_modules/
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
-# Optional npm cache directory
-.npm
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
 
-# dotenv environment variable files
+# testing
+/coverage
+
+# next.js
+/.next/
+/out/
+
+# production
+/build
+
+# misc
+.DS_Store
+*.pem
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# local env files
+.env*.local
 .env
-.next
-.env.development.local
-.env.test.local
-.env.production.local
-.env.local
+
+# vercel
+.vercel
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts
+
+# icon generated file
+src/assets/iconify-icons/generated-icons.js
+src/assets/iconify-icons/generated-icons.css
