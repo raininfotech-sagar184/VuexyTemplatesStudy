@@ -5,8 +5,7 @@ import { useState } from 'react'
 
 // Next Imports
 import Link from 'next/link'
-import { useParams, useRouter, useSearchParams } from 'next/navigation'
-
+import { useParams, useRouter, useSearchParams } from 'next/navigation' 
 // MUI Imports
 import useMediaQuery from '@mui/material/useMediaQuery'
 import { styled, useTheme } from '@mui/material/styles'
@@ -121,8 +120,7 @@ const Login = ({ mode }) => {
       email: data.email,
       password: data.password,
       redirect: false
-    })
-
+    }) 
     if (res && res.ok && res.error === null) {
       // Vars
       const redirectURL = searchParams.get('redirectTo') ?? '/'
