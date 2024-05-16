@@ -11,7 +11,7 @@ import '@/app/globals.css'
 
 // Generated Icon CSS Imports
 import '@assets/iconify-icons/generated-icons.css'
-
+import './global.css'
 export const metadata = {
   title: 'Vuexy - MUI Next.js Admin Dashboard Template',
   description:

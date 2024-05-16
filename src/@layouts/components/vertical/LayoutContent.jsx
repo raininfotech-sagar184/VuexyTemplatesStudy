@@ -24,7 +24,7 @@ const LayoutContent = ({ children }) => {
     <StyledMain
       isContentCompact={contentCompact}
       className={classnames(verticalLayoutClasses.content, 'flex-auto', {
-        [`${verticalLayoutClasses.contentCompact} is-full`]: contentCompact,
+        [`${verticalLayoutClasses.contentCompact} is-full webkit-width`]: contentCompact,
         [verticalLayoutClasses.contentWide]: contentWide
       })}
     >
