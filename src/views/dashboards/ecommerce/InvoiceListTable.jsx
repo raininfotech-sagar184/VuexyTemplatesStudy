@@ -100,7 +100,7 @@ const InvoiceListTable = ({ invoiceData }) => {
   const [globalFilter, setGlobalFilter] = useState('')
 
   // Hooks
-  const { lang: locale } = useParams()
+  const locale = 'en'
 
   const columns = useMemo(
     () => [

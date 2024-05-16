@@ -5,7 +5,7 @@ import { useState } from 'react'
 
 // Next Imports
 import Link from 'next/link'
-import { useParams, useRouter, useSearchParams } from 'next/navigation' 
+import { useParams, useRouter, useSearchParams } from 'next/navigation'
 // MUI Imports
 import useMediaQuery from '@mui/material/useMediaQuery'
 import { styled, useTheme } from '@mui/material/styles'
@@ -112,7 +112,6 @@ const Login = ({ mode }) => {
     borderedLightIllustration,
     borderedDarkIllustration
   )
-  console.log("characterIllustration====================>",characterIllustration)
   const handleClickShowPassword = () => setIsPasswordShown(show => !show)
 
   const onSubmit = async data => {
@@ -120,12 +119,12 @@ const Login = ({ mode }) => {
       email: data.email,
       password: data.password,
       redirect: false
-    }) 
+    })
     if (res && res.ok && res.error === null) {
       // Vars
       const redirectURL = searchParams.get('redirectTo') ?? '/'
 
-      router.push("dashboards/crm")
+      router.push('dashboards/crm')
     } else {
       if (res?.error) {
         const error = JSON.parse(res.error)
@@ -218,12 +217,7 @@ const Login = ({ mode }) => {
             />
             <div className='flex justify-between items-center gap-x-3 gap-y-1 flex-wrap'>
               <FormControlLabel control={<Checkbox defaultChecked />} label='Remember me' />
-              <Typography
-                className='text-end'
-                color='primary'
-                component={Link}
-                href={ '/forgot-password' }
-              >
+              <Typography className='text-end' color='primary' component={Link} href={'/forgot-password'}>
                 Forgot password?
               </Typography>
             </div>
@@ -232,7 +226,7 @@ const Login = ({ mode }) => {
             </Button>
             <div className='flex justify-center items-center flex-wrap gap-2'>
               <Typography>New on our platform?</Typography>
-              <Typography component={Link} href={ '/register'} color='primary'>
+              <Typography component={Link} href={'/register'} color='primary'>
                 Create an account
               </Typography>
             </div>

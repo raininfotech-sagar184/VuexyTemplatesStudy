@@ -121,15 +121,15 @@ import { NextResponse } from 'next/server'
 
 // This function can be marked `async` if using `await` inside
 export function middleware(request) {
-  //   console.log('request=============', request)
-  if (1 == 1) {
-    return NextResponse.redirect(new URL('/home', request.url))
-  } else {
-    return NextResponse.redirect(new URL('/login', request.url))
-  }
-  //   return NextResponse.redirect(new URL('/home', request.url))
+    //   console.log('request=============', request)
+    if (1 == 1) {
+        return NextResponse.redirect(new URL('/dashboards/crm', request.url))
+    } else {
+        return NextResponse.redirect(new URL('/login', request.url))
+    }
+    //   return NextResponse.redirect(new URL('/home', request.url))
 }
 // Matcher Config
 export const config = {
-  matcher: '/'
+    matcher: '/'
 }
