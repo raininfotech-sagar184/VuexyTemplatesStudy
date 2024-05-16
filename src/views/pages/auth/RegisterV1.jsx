@@ -33,7 +33,7 @@ const RegisterV1 = () => {
   const [isPasswordShown, setIsPasswordShown] = useState(false)
 
   // Hooks
-  const { lang: locale } = useParams()
+  const locale = 'en'
   const handleClickShowPassword = () => setIsPasswordShown(show => !show)
 
   return (

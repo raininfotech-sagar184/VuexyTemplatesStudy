@@ -57,7 +57,7 @@ const NavSearch = () => {
   const { settings } = useSettings()
   const { isBreakpointReached } = useVerticalNav()
   const isSmallScreen = useMedia('(max-width: 600px)', false)
-  const { lang: locale } = useParams()
+  const locale = 'en'
 
   // Vars
   // Search Actions Data with 'perform' method

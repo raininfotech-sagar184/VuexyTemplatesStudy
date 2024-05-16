@@ -30,7 +30,7 @@ const EditActions = ({ id }) => {
   const [sendDrawerOpen, setSendDrawerOpen] = useState(false)
 
   // Hooks
-  const { lang: locale } = useParams()
+  const locale = 'en'
 
   return (
     <Grid container spacing={6}>

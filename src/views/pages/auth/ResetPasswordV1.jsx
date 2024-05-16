@@ -32,7 +32,7 @@ const ResetPasswordV1 = () => {
   const [isConfirmPasswordShown, setIsConfirmPasswordShown] = useState(false)
 
   // Hooks
-  const { lang: locale } = useParams()
+  const locale = 'en'
   const handleClickShowPassword = () => setIsPasswordShown(show => !show)
   const handleClickShowConfirmPassword = () => setIsConfirmPasswordShown(show => !show)
 

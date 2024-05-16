@@ -75,7 +75,7 @@ const EnterComponent = ({ active, currentPath, data, locale }) => {
 
 const SearchResultItem = forwardRef(({ action, active, currentRootActionId, currentPath, data }, ref) => {
   // Hooks
-  const { lang: locale } = useParams()
+  const locale = 'en'
 
   const ancestors = useMemo(() => {
     if (!currentRootActionId) return action.ancestors

@@ -44,7 +44,7 @@ const Logo = () => {
   // Hooks
   const { isHovered, transitionDuration } = useVerticalNav()
   const { settings } = useSettings()
-  const { lang: locale } = useParams()
+  const locale = 'en'
 
   // Vars
   const { layout } = settings
@@ -67,7 +67,7 @@ const Logo = () => {
   // You may return any JSX here to display a logo in the sidebar header
   // return <Img src='/next.svg' width={100} height={25} alt='logo' /> // for example
   return (
-    <Link href={"/"} className='flex items-center'>
+    <Link href={'/'} className='flex items-center'>
       <VuexyLogo className='text-2xl text-primary' />
       <LogoText
         ref={logoTextRef}

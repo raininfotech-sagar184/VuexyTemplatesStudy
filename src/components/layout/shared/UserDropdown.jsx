@@ -50,7 +50,7 @@ const UserDropdown = () => {
   const router = useRouter()
   const { data: session } = useSession()
   const { settings } = useSettings()
-  const { lang: locale } = useParams()
+  const locale = 'en'
 
   const handleDropdownOpen = () => {
     !open ? setOpen(true) : setOpen(false)

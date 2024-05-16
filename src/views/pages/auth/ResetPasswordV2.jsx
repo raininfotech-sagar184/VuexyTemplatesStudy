@@ -66,7 +66,7 @@ const ResetPasswordV2 = ({ mode }) => {
   const lightIllustration = '/images/illustrations/auth/v2-reset-password-light.png'
 
   // Hooks
-  const { lang: locale } = useParams()
+  const locale = 'en'
   const { settings } = useSettings()
   const theme = useTheme()
   const hidden = useMediaQuery(theme.breakpoints.down('md'))

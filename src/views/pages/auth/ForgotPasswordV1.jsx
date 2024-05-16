@@ -23,7 +23,7 @@ import AuthIllustrationWrapper from './AuthIllustrationWrapper'
 
 const ForgotPasswordV1 = () => {
   // Hooks
-  const { lang: locale } = useParams()
+  const locale = 'en'
 
   return (
     <AuthIllustrationWrapper>

@@ -33,7 +33,7 @@ const NoResult = props => {
 
   // Hooks
   const { query: kbarQuery } = useKBar()
-  const { lang: locale } = useParams()
+  const locale = 'en'
 
   return (
     <div className='flex items-center justify-center grow flex-wrap plb-14 pli-16 overflow-y-auto overflow-x-hidden'>

@@ -115,7 +115,7 @@ const defaultSuggestions = [
 const DefaultSuggestions = () => {
   // Hooks
   const { query } = useKBar()
-  const { lang: locale } = useParams()
+  const locale = 'en'
 
   return (
     <div className='flex grow flex-wrap gap-x-[48px] gap-y-8 plb-14 pli-16 overflow-y-auto overflow-x-hidden'>

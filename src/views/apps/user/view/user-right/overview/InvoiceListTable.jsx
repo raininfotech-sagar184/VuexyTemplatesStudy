@@ -83,7 +83,7 @@ const InvoiceListTable = ({ invoiceData }) => {
   const open = Boolean(anchorEl)
 
   // Hooks
-  const { lang: locale } = useParams()
+  const locale = 'en'
 
   const columns = useMemo(
     () => [

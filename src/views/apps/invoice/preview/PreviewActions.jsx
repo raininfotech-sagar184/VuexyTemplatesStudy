@@ -25,7 +25,7 @@ const PreviewActions = ({ id }) => {
   const [sendDrawerOpen, setSendDrawerOpen] = useState(false)
 
   // Hooks
-  const { lang: locale } = useParams()
+  const locale = 'en'
 
   return (
     <>

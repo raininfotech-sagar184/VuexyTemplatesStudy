@@ -16,7 +16,7 @@ import { getLocalizedUrl } from '@/utils/i18n'
 // Generate a menu from the menu data array
 export const GenerateVerticalMenu = ({ menuData }) => {
   // Hooks
-  const { lang: locale } = useParams()
+  const locale = 'en'
 
   const renderMenuItems = data => {
     // Use the map method to iterate through the array of menu data
@@ -76,7 +76,7 @@ export const GenerateVerticalMenu = ({ menuData }) => {
 // Generate a menu from the menu data array
 export const GenerateHorizontalMenu = ({ menuData }) => {
   // Hooks
-  const { lang: locale } = useParams()
+  const locale = 'en'
 
   const renderMenuItems = data => {
     // Use the map method to iterate through the array of menu data
